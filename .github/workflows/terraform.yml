@@ -61,3 +61,11 @@ jobs:
         tf_actions_version: 1.6.5
         tf_actions_subcommand: 'apply'
         tf_actions_working_dir: ".github/workflows/azure-backend"
+    - name: Terraform Destroy
+      if: github.ref == 'refs/heads/main'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.6.5
+        tf_actions_subcommand: 'destroy'
+        tf_actions_working_dir: ".github/workflows/azure-backend"
+
