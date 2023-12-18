@@ -56,7 +56,7 @@ jobs:
   terraform:
   defaults:
       run:
-        working-directory: ".github/workflows/azure-backend/main.tf"
+        working-directory: "../azure-backend/main.tf"
   name: 'Terraform'
   runs-on: ubuntu-latest
   environment: production
