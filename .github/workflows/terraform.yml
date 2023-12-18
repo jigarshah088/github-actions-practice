@@ -53,10 +53,8 @@ permissions:
   contents: read
 
 jobs:
-  terraform:
-  defaults:
-      run:
-        working-directory: "./azure-backend"
+directories:
+  working-directory: "./azure-backend"
   name: 'Terraform'
   runs-on: ubuntu-latest
   environment: production
