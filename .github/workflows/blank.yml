@@ -1,15 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Sample
-on: workflow_dispatch
+name: sample
+on: workflow-dispatch
+
 jobs:
-  sample:
+  sampl1:
     runs-on: ubuntu-latest
+
     steps:
-       -name: print hello
-       run: |
-        echo Hello Github
-        echo `whoami`
-      -name: print GoodBye
-      run:
-        echo "Bye"
+      - name: print hello
+        run: |
+          echo Hello
+          echo `whoami`
