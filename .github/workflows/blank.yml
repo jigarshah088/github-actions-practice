@@ -1,8 +1,7 @@
 name: jigar
-on: 
-  workflow-dispatch:
-    branches:
-      -main
+on: workflow-dispatch:
+      branches:
+        -main
 jobs:
   sample_job:
     runs-on: ubuntu-latest
