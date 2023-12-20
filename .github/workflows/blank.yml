@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   sample:
     runs-on: ubuntu-latest
-steps:
+    steps:
        -name: print hello
        run: |
         echo Hello Github
