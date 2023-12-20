@@ -3,6 +3,7 @@
 name: Sample
 on: workflow_dispatch
 jobs:
+  sample:
     runs-on: ubuntu-latest
     steps:
        -name: print hello
