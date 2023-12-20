@@ -1,14 +1,11 @@
-# This is a basic workflow to help you get started with Actions
-
-name: sample
+name: jigar
 on: 
   workflow-dispatch:
-  jobs:
-    sampl1:
+
+jobs:
+  sample_job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: print hello
-        run: |
-          echo Hello
-          echo `whoami`
+      - name: print
+        run: echo hi
